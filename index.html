@@ -15,20 +15,25 @@
 	<meta http-equiv="cleartype" content="on">
 	
 	<!-- StyleSheets under here -->
+	
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
 	<link href="css/packingList.css" type="text/css" rel="stylesheet"  />
-	
+	<link rel="stylesheet" href="themes/Chalkboard.min.css" />
 	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
 	<script src="js/libs/modernizr.custom.min.js"></script>
 
 </head>
 <body>
+
 	<div data-role="page" id="home" data-theme="a"><!--HOME PAGE START -->
-		<div data-role="header">
-			<h1>SUITCASE</h1>
-			<a href="#travel" data-icon="info" data-iconpos="notext" class="ui-btn-left"></a>
+
+		
+		<div data-role="header" data-theme="a">
+			<p style="margin-left:90px;"><font face="Helvetica">Suitcase Essenstials</font></p>
+				<a href="#travel" data-icon="info" data-iconpos="notext" class="ui-btn-left" data-transition="slidefade"></a>
 		</div>
-		<a href="#create"><img src="images/images/CTA.jpg"></a>
+
+				<a href="#create" data-transition="slidefade"><img src="images/images/CTA.jpg"></a>
 
 		<div data-role="content" data-theme="a">
 			<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search..." data-inset="true">
@@ -44,11 +49,11 @@
 			
 
 			<ul data-role="listview" data-inset="true">
-			    <li><a href="#over">Overnight</a></li>
-			    <li><a href="#two">Two Nights</a></li>
-			    <li><a href="#four">Four Nights</a></li>
-			    <li><a href="#week1">One Week</a></li>
-			    <li><a href="#week2">Two Weeks</a></li>
+			    <li><a href="#over" data-transition="slidefade" >Overnight</a></li>
+			    <li><a href="#two" data-transition="slidefade">Two Nights</a></li>
+			    <li><a href="#four" data-transition="slidefade">Four Nights</a></li>
+			    <li><a href="#week1" data-transition="slidefade">One Week</a></li>
+			    <li><a href="#week2" data-transition="slidefade">Two Weeks</a></li>
 			</ul>
 
 
@@ -57,10 +62,10 @@
 		<div data-role="footer">
 			<div data-role="navbar" data-position="fixed">
 				<ul>
-					<li><a href="#home" data-icon="home">HOME</a></li>
-					<li><a href="#create" data-icon="edit">CREATE</a></li>
-					<li><a href="#info" data-icon="info">INFO</a></li>
-					<li><a href="#links" data-icon="bars">LINKS</a></li>
+					<li><a href="#home" data-icon="home" data-transition="slidefade" >HOME</a></li>
+					<li><a href="#create" data-icon="edit" data-transition="slidefade" >CREATE</a></li>
+					<li><a href="#info" data-icon="info" data-transition="slidefade" >INFO</a></li>
+					<li><a href="#links" data-icon="bars" data-transition="slidefade"  >LINKS</a></li>
 				</ul>
 
 
@@ -101,17 +106,18 @@
 	
 			<form id="userForm" action="#" method="post">
 					<h3>Create A New Account</h3>
+					<h5 style="color:red;">* indicates required fields</h5>
 				<fieldset data-role="controlgroup">
-						<label for="firstname">First Name:</label>
+						<label for="firstname">* First Name:</label>
 					 	<input type="text" id="firstname" name="firstname" placeholder="First Name" class="required"/>
 							
-						<label for="lastname">Last Name:</label>
+						<label for="lastname">* Last Name:</label>
 		 				<input type="text" id="lastname" name="lastname" placeholder="Last Name" class="required"/>
 							
 				
-				E-mail Address: <input type="email" id="eml" name="eml" placeholder="janesmith@usa.com" class="required email"/>
+				* E-mail Address: <input type="email" id="eml" name="eml" placeholder="janesmith@usa.com" class="required email"/>
 				
-				Telephone Number: <input type="tel" id="tele" name="tele" placeholder="1-123-456-7890"class="required"/>
+				* Telephone Number: <input type="tel" id="tele" name="tele" placeholder="1-123-456-7890"class="required"/>
 				</fieldset>
 
 				<fieldset data-role="controlgroup">
@@ -166,10 +172,10 @@
 		<div data-role="footer">
 			<div data-role="navbar" data-position="fixed">
 				<ul>
-					<li><a href="#home" data-icon="home">HOME</a></li>
-					<li><a href="#create" data-icon="edit">CREATE</a></li>
-					<li><a href="#info" data-icon="info">INFO</a></li>
-					<li><a href="#links" data-icon="bars">LINKS</a></li>
+					<li><a href="#home" data-icon="home" data-transition="slidefade" >HOME</a></li>
+					<li><a href="#create" data-icon="edit" data-transition="slidefade" >CREATE</a></li>
+					<li><a href="#info" data-icon="info" data-transition="slidefade" >INFO</a></li>
+					<li><a href="#links" data-icon="bars" data-transition="slidefade"  >LINKS</a></li>
 				</ul>
 
 
@@ -204,10 +210,10 @@
 		<div data-role="footer">
 			<div data-role="navbar" data-position="fixed">
 				<ul>
-					<li><a href="#home" data-icon="home">HOME</a></li>
-					<li><a href="#create" data-icon="edit">CREATE</a></li>
-					<li><a href="#info" data-icon="info">INFO</a></li>
-					<li><a href="#links" data-icon="bars">LINKS</a></li>
+					<li><a href="#home" data-icon="home" data-transition="slidefade" >HOME</a></li>
+					<li><a href="#create" data-icon="edit" data-transition="slidefade" >CREATE</a></li>
+					<li><a href="#info" data-icon="info" data-transition="slidefade" >INFO</a></li>
+					<li><a href="#links" data-icon="bars" data-transition="slidefade"  >LINKS</a></li>
 				</ul>
 
 
@@ -254,10 +260,10 @@
 		<div data-role="footer">
 			<div data-role="navbar" data-position="fixed">
 				<ul>
-					<li><a href="#home" data-icon="home">HOME</a></li>
-					<li><a href="#create" data-icon="edit">CREATE</a></li>
-					<li><a href="#info" data-icon="info">INFO</a></li>
-					<li><a href="#links" data-icon="bars">LINKS</a></li>
+					<li><a href="#home" data-icon="home" data-transition="slidefade" >HOME</a></li>
+					<li><a href="#create" data-icon="edit" data-transition="slidefade" >CREATE</a></li>
+					<li><a href="#info" data-icon="info" data-transition="slidefade" >INFO</a></li>
+					<li><a href="#links" data-icon="bars" data-transition="slidefade"  >LINKS</a></li>
 				</ul>
 
 
@@ -405,13 +411,13 @@
 
 
 		</div>
-		<div data-role="footer">
+	<div data-role="footer">
 			<div data-role="navbar" data-position="fixed">
 				<ul>
-					<li><a href="#home">HOME</a></li>
-					<li><a href="#create">CREATE</a></li>
-					<li><a href="#info">INFO</a></li>
-					<li><a href="#links">LINKS</a></li>
+					<li><a href="#home" data-icon="home" data-transition="slidefade" >HOME</a></li>
+					<li><a href="#create" data-icon="edit" data-transition="slidefade" >CREATE</a></li>
+					<li><a href="#info" data-icon="info" data-transition="slidefade" >INFO</a></li>
+					<li><a href="#links" data-icon="bars" data-transition="slidefade"  >LINKS</a></li>
 				</ul>
 
 
@@ -562,10 +568,10 @@
 		<div data-role="footer">
 			<div data-role="navbar" data-position="fixed">
 				<ul>
-					<li><a href="#home">HOME</a></li>
-					<li><a href="#create">CREATE</a></li>
-					<li><a href="#info">INFO</a></li>
-					<li><a href="#links">LINKS</a></li>
+					<li><a href="#home" data-icon="home" data-transition="slidefade" >HOME</a></li>
+					<li><a href="#create" data-icon="edit" data-transition="slidefade" >CREATE</a></li>
+					<li><a href="#info" data-icon="info" data-transition="slidefade" >INFO</a></li>
+					<li><a href="#links" data-icon="bars" data-transition="slidefade"  >LINKS</a></li>
 				</ul>
 
 
@@ -574,7 +580,6 @@
 
 
 		</div>
-
 
 	</div>
 	<div data-role="page" id="four" data-theme="a">
@@ -716,10 +721,10 @@
 		<div data-role="footer">
 			<div data-role="navbar" data-position="fixed">
 				<ul>
-					<li><a href="#home">HOME</a></li>
-					<li><a href="#create">CREATE</a></li>
-					<li><a href="#info">INFO</a></li>
-					<li><a href="#links">LINKS</a></li>
+					<li><a href="#home" data-icon="home" data-transition="slidefade" >HOME</a></li>
+					<li><a href="#create" data-icon="edit" data-transition="slidefade" >CREATE</a></li>
+					<li><a href="#info" data-icon="info" data-transition="slidefade" >INFO</a></li>
+					<li><a href="#links" data-icon="bars" data-transition="slidefade"  >LINKS</a></li>
 				</ul>
 
 
@@ -870,10 +875,10 @@
 		<div data-role="footer">
 			<div data-role="navbar" data-position="fixed">
 				<ul>
-					<li><a href="#home">HOME</a></li>
-					<li><a href="#create">CREATE</a></li>
-					<li><a href="#info">INFO</a></li>
-					<li><a href="#links">LINKS</a></li>
+					<li><a href="#home" data-icon="home" data-transition="slidefade" >HOME</a></li>
+					<li><a href="#create" data-icon="edit" data-transition="slidefade" >CREATE</a></li>
+					<li><a href="#info" data-icon="info" data-transition="slidefade" >INFO</a></li>
+					<li><a href="#links" data-icon="bars" data-transition="slidefade"  >LINKS</a></li>
 				</ul>
 
 
@@ -1021,13 +1026,13 @@
 
 
 		</div>
-		<div data-role="footer">
+	<div data-role="footer">
 			<div data-role="navbar" data-position="fixed">
 				<ul>
-					<li><a href="#home">HOME</a></li>
-					<li><a href="#create">CREATE</a></li>
-					<li><a href="#info">INFO</a></li>
-					<li><a href="#links">LINKS</a></li>
+					<li><a href="#home" data-icon="home" data-transition="slidefade" >HOME</a></li>
+					<li><a href="#create" data-icon="edit" data-transition="slidefade" >CREATE</a></li>
+					<li><a href="#info" data-icon="info" data-transition="slidefade" >INFO</a></li>
+					<li><a href="#links" data-icon="bars" data-transition="slidefade"  >LINKS</a></li>
 				</ul>
 
 
@@ -1067,10 +1072,10 @@
 		<div data-role="footer">
 			<div data-role="navbar" data-position="fixed">
 				<ul>
-					<li><a href="#home" data-icon="home">HOME</a></li>
-					<li><a href="#create" data-icon="edit">CREATE</a></li>
-					<li><a href="#info" data-icon="info">INFO</a></li>
-					<li><a href="#links" data-icon="bars">LINKS</a></li>
+					<li><a href="#home" data-icon="home" data-transition="slidefade" >HOME</a></li>
+					<li><a href="#create" data-icon="edit" data-transition="slidefade" >CREATE</a></li>
+					<li><a href="#info" data-icon="info" data-transition="slidefade" >INFO</a></li>
+					<li><a href="#links" data-icon="bars" data-transition="slidefade"  >LINKS</a></li>
 				</ul>
 
 
@@ -1096,10 +1101,10 @@
 		<div data-role="footer">
 			<div data-role="navbar" data-position="fixed">
 				<ul>
-					<li><a href="#home" data-icon="home">HOME</a></li>
-					<li><a href="#create" data-icon="edit">CREATE</a></li>
-					<li><a href="#info" data-icon="info">INFO</a></li>
-					<li><a href="#links" data-icon="bars">LINKS</a></li>
+					<li><a href="#home" data-icon="home" data-transition="slidefade" >HOME</a></li>
+					<li><a href="#create" data-icon="edit" data-transition="slidefade" >CREATE</a></li>
+					<li><a href="#info" data-icon="info" data-transition="slidefade" >INFO</a></li>
+					<li><a href="#links" data-icon="bars" data-transition="slidefade"  >LINKS</a></li>
 				</ul>
 
 
@@ -1125,10 +1130,10 @@
 		<div data-role="footer">
 			<div data-role="navbar" data-position="fixed">
 				<ul>
-					<li><a href="#home" data-icon="home">HOME</a></li>
-					<li><a href="#create" data-icon="edit">CREATE</a></li>
-					<li><a href="#info" data-icon="info">INFO</a></li>
-					<li><a href="#links" data-icon="bars">LINKS</a></li>
+					<li><a href="#home" data-icon="home" data-transition="slidefade" >HOME</a></li>
+					<li><a href="#create" data-icon="edit" data-transition="slidefade" >CREATE</a></li>
+					<li><a href="#info" data-icon="info" data-transition="slidefade" >INFO</a></li>
+					<li><a href="#links" data-icon="bars" data-transition="slidefade"  >LINKS</a></li>
 				</ul>
 
 
@@ -1158,10 +1163,10 @@
 		<div data-role="footer">
 			<div data-role="navbar" data-position="fixed">
 				<ul>
-					<li><a href="#home" data-icon="home">HOME</a></li>
-					<li><a href="#create" data-icon="edit">CREATE</a></li>
-					<li><a href="#info" data-icon="info">INFO</a></li>
-					<li><a href="#links" data-icon="bars">LINKS</a></li>
+					<li><a href="#home" data-icon="home" data-transition="slidefade" >HOME</a></li>
+					<li><a href="#create" data-icon="edit" data-transition="slidefade" >CREATE</a></li>
+					<li><a href="#info" data-icon="info" data-transition="slidefade" >INFO</a></li>
+					<li><a href="#links" data-icon="bars" data-transition="slidefade"  >LINKS</a></li>
 				</ul>
 
 
@@ -1208,10 +1213,10 @@
 		<div data-role="footer">
 			<div data-role="navbar" data-position="fixed">
 				<ul>
-					<li><a href="#home" data-icon="home">HOME</a></li>
-					<li><a href="#create" data-icon="edit">CREATE</a></li>
-					<li><a href="#info" data-icon="info">INFO</a></li>
-					<li><a href="#links" data-icon="bars">LINKS</a></li>
+					<li><a href="#home" data-icon="home" data-transition="slidefade" >HOME</a></li>
+					<li><a href="#create" data-icon="edit" data-transition="slidefade" >CREATE</a></li>
+					<li><a href="#info" data-icon="info" data-transition="slidefade" >INFO</a></li>
+					<li><a href="#links" data-icon="bars" data-transition="slidefade"  >LINKS</a></li>
 				</ul>
 
 

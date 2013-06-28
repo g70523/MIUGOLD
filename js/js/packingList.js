@@ -2,7 +2,7 @@
  * Mobile Interfaces Usability
  * 1306
  * Louise Whitney
- * Assignement 1
+ * Assignement 4
 **/
 window.addEventListener("DOMContentLoaded", function(){
 
@@ -235,7 +235,7 @@ function delUserItem(){
 	}
 
 function validate(x) {
-                        var userName 		= $('firstname');
+            var userName 		= $('firstname');
 			var userLast 		= $('lastname');
 			var userEmail		= $('eml');
 			var userPhone		= $('tele');		
@@ -248,6 +248,7 @@ function validate(x) {
                                 alert("Please Enter Your First Name");
                                 return;
 			}
+			userName.jqInvalid { background: #ffdddd;}
 			if(userLast.value == ""){
                                 alert("Please Enter Your Last Name");
                                 return;
@@ -273,13 +274,11 @@ function validate(x) {
 			}else{
 				saveUser(this.key);
 			}//code
+			
 }
         
 var travelTime = ["--Length of Travel--", "Overnight", "2 Nights", "3 Nights", "4 Nights", "5 Nights", "6 Nights", "One Week", "Two Weeks"];
     checkBoxValue = "Driving";
-  
-
-
 
 
 pickOne();
